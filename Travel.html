@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Travel</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ 
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2> My Travel Experiences </h2>
+</header>
+
+<section>
+
+  
+ 
+    <h1>London</h1>
+    <p>I regularly travel to London to visit my brother who lives over there. I love to do bus tours of the city. There is something there for everyone. From listening to the bells of Big Ben, looking over the Thames River from the London eye to getting a glimpse of the well guarded Buckingham Palace. </p>
+    <p>Moreover, the nightlife is superb. Over Christmas I went to the nightclub Fabric which has the best DJ's in the city. The culture in addition to the delicious food is why I love to visit the city. On my final day, I went on a truck which is also a boat. This was a unique experience for me and opened my eyes to the wonderful inventions around us. </p>
+	
+<div class="row">
+  <div class="column">
+    <img src="London.jpeg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Fabric.jpeg"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="boats.jpg" style="width:100%">
+  </div>
+</div>
+ 
+</section>
+    
+
+    <h1 >Bali</h1>
+    <p>Bali is situated in Indonesia. My family and I spent 2 weeks in this beautiful islands. The blue skies and crystal clear waters are spectacular. On the first day, we embarked on a safari which went from the mountains right down to the sea. A four wheel jeep brought us through the landscapes and we got to see the animals in their natural habitats. The orangutan's and the lions were my favourite animals. </p>
+    <p> The next morning, we got up at dawn to see sunrise and to embark on hike up the forested volcanic mountains. From the top of the mountain we got to see the religious cliffside Uluwatu Temple. Lastly, we enjoyed the art market and water sports such as scuba diving. The expenses and the time it took us to reach Bali was definitely worth it! </p>
+	
+<div class="row">
+  <div class="column">
+    <img src="balibeach.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="balime.png"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="baliwaters.png" style="width:100%">
+  </div>
+</div>
+
+<section>
+
+  
+    <h1 >Portugal</h1>
+    <p> My family and I spent 3 weeks last summer in the Algarve. The beaches in addition to the food and nightlife were brilliant. The nightlife was electric and the landscapes were beautiful. </p>
+<div class="row">
+  <div class="column">
+    <img src="porty.jpeg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="villamora.jpg"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="food.png" style="width:100%">
+  </div>
+</div>
+ <a href="MyInterests.html"><img src="button.png" width="200" height="200"></a>
+</section>
+
+
+</body>
+</html>
