@@ -1,3 +1,10 @@
+<?php
+session_start();
+$totalValue = "";
+$_SESSION['txtTotal'] = $totalValue;
+?>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -74,11 +81,7 @@ td {
 	border: 3px solid #9370DB;
 	}
 	
-	body { 
-       background-image: url("images/backgroundinterests.jpg");
-	   font: forte;
-	   
-  }
+	
 
 
 	
@@ -93,7 +96,7 @@ td {
 		var A,
 		    B,
 			C,
-			D;
+                        D;
 			
 	    /*----------------A Check Box--------------------*/
 		if(document.addform.chkbox1.checked == true)
@@ -135,9 +138,9 @@ td {
 	
 	
 	    subTotal = A + B + C ;
-		calcDisTotal(subTotal); //Call the function called calcDisVatTotal
+		calcDisTotal(subTotal); 
 		 
-		}//end calcSub function
+		}
 		 
 		 
 		function calcDisTotal(parm1)
@@ -155,8 +158,7 @@ td {
 		vatAmt= subTotal*0.2;
 		
 		totalPrice = (subTotal - discountAmt + vatAmt);
-		
-//calls display function and passes each variable as a parameter
+
         display(subTotal,discountAmt,vatAmt,totalPrice);
 			
 		}
@@ -169,7 +171,7 @@ td {
 		document.addform.displayvat.value=parm4;
 		document.addform.Total.value=parm5;
 		
-		}//end display()
+		}
 	</script>
 		
 					
@@ -186,20 +188,19 @@ td {
 		    <table align =" center" border =" 0" width = 80%>
 			
 			<tr>
-			   <td><input type = "checkbox" name = "chkbox1" >Blockchain - 1000</td>
-			</tr> <!--Creates checkboxes and assigns a name to it -->
+			   <td><input type = "checkbox" name = "chkbox1" >Blockchain - $1000</td>
+			</tr> 
 			
 			<tr>
-			   <td><input type = "checkbox" name = "chkbox2">Autonomous Things - 2000</td>
+			   <td><input type = "checkbox" name = "chkbox2">Autonomous Things - $2000</td>
 			</tr>
 			
 			<tr>
-			   <td><input type = "checkbox" name = "chkbox3">Immersive Experience - 3000</td>
+			   <td><input type = "checkbox" name = "chkbox3">Immersive Experience - $3000</td>
 			</tr>
 			
 		
 			
-			<!------------------------Labels and Textboxes------------------>
 			
 			<tr>
 			    <td><strong>Cost</strong></td>

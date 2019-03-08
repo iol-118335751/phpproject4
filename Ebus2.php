@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
-<?php //This will save the value of the total as a cookie 
-
-		//so that it can be accessed on Ebus3.php.
+<?php 
 
 		setcookie("Total", $_POST['Total'], time() +86400);
 
@@ -130,9 +128,7 @@ td {
 		  
 		  <form name="CustomerPaymentDetails" action="Ebus3.php" 
 		  onsubmit="return validate_form();" method="post">
-		  <!--When this form is submitted by the user clicking
-		  the Validate/Proceed with Purchase button,
-		  the Javascript function validate_form(); is called-->
+		  
 		
 			<center><h3> Please enter your payment details </h3>
 			<br />
@@ -151,9 +147,7 @@ td {
 			</table>
 			<br />
 			<input type="submit" value="Validate/Proceed with Purchase" />
-			<!--When the user clicks this button, this calls the function 
-			validate_form(); and if the value of valid returned is true they will be 
-			able to move on to EBus3.php-->
+			
 			</center>
 		</form>
 		</body>
